@@ -86,5 +86,9 @@ unsigned char read_byte(){
 
 ### Apartado B
 
+<p>ealice el apartado anterior usando interrupciones. Para ello, la interrupción se disparará ante un flanco 
+de bajada de la señal R. Deberá hacer una única lectura de D y controlar el número de bits (de los 8 del 
+byte) que lleva leídos, así como el total de 1024 bytes límite a leer. </p>
+
 
 
