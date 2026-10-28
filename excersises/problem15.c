@@ -13,7 +13,7 @@
 
 void isOn(void);
 void config(int configMode);
-void polling(int sensor);
+unsigned char polling(int sensor);
 void interruption(void);
 void rsi(void);
 
@@ -76,7 +76,7 @@ void rti(){
 
 }
 
-void polling(int sensor){
+unsigned char  polling(int sensor){
     unsigned char control=inb(RegControl);
     control &= ~0x38;   
     control|=(sensor<<4);
